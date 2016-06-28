@@ -20,6 +20,8 @@ public class CarDealership {
 				System.out.print("NEW: ");
 			
 			System.out.print(c.getMake() + "\t" + c.getModel() + "\t" + c.getYear() + "\t($" + c.getPrice() +")");
+			if (c instanceof UsedCar)
+				System.out.print("\t" + ((UsedCar) c).getMiles() + " miles");
 			System.out.println();
 		}
 	}
